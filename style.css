@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+
+    --color1 : white;
+    --color2 : black;
+
+    --color4 : rgb(80, 21, 208);
+    --color3 : orange;
+
+    --hover1 : rgb(187, 180, 180);
+    --hover2 : rgb(20, 18, 18);
+
+    --hover4 :rgb(49, 9, 135) ;
+    --hover3 : rgb(136, 95, 18);
+}
+
+html {
+    font-size: 15px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(1.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 , 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--hover2); */
+    background-color: rgb(0, 0, 0 , 0.3);
+    border-left: 2px solid var(--color3);
+    border-top: 2px solid var(--color3);
+    border-radius: 10px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    box-shadow: 4px 4px 15px white;
+}
+
+form h3{
+    width: 40%;
+    margin: 1.5rem auto 3rem auto;
+    background-color: rgb(0, 0, 0 , 0);
+    color: var(--color1);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: 2px solid var(--color3);
+    border-top: none;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+h3:hover{
+    background-color: var(--color3);
+    color: var(--color2);
+    border-bottom: 3px solid var(--color3);
+}
+
+.first input{
+    width: 40%;
+    border-bottom: 1px solid var(--hover3);
+    border-bottom-right-radius: 20px;
+}
+.first{
+    display: flex;
+  
+}
+
+.input-email, .input-password, .input-repeat-password{
+    width: 90%;
+    margin: 0.5rem auto;
+    border-bottom: 1px solid var(--hover3);
+    border-bottom-right-radius: 20px;
+    background-color: rgb(0, 0, 0 , 0);
+
+}
+input{
+    width: 80%;
+    color: var(--color1);
+    /* background-color: var(--hover2); */
+    background-color: rgb(0, 0, 0 , 0);
+    height: 1rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    margin: 0rem 0.8rem 0.6rem 0.8rem;
+    transition: 1s;
+    /* border: 1px solid var(--color3); */
+}
+
+
+i{
+    color: var(--color3);
+}
+
+button{
+    width: 40%;
+    font-weight: 700;
+    background-color: var(--color1);
+    outline: none;
+    border: none;
+    border: 2px solid var(--color3);
+    border-top: none;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    height: 2rem;
+    color: var(--color2);
+    cursor: pointer;
+    margin: 1.5rem 0rem 1rem 0rem ;
+}
+button:hover{
+    background-color: var(--hover3);
+    color: var(--color1);
+    letter-spacing: 2px;
+}
+
+form p{
+    color: var(--color1);
+    margin: 1.5rem 0rem 0.5rem 0rem;
+    font-weight: 500;
+}
+
+form a{
+    color: var(--color3);
+    font-weight: 900;
+    font-size: 1.5rem;
+    
+}
+form #p{
+    color: var(--color1);
+    margin: 1rem 0rem 1.5rem 0rem;
+    cursor: pointer;
+}
+
+
+
+.social-icons{
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+ 
+}
+.social-icons a{
+font-size: 1.4rem;
+color: var(--color1);
+border-radius: 50%;
+margin: 1rem;
+
+}
+.social-icons i{
+    transform: rotate(-40deg);
+}
+.social-icons i:hover{
+   color: var(--hover3);
+   transform: rotate(0deg);
+}
